@@ -1,11 +1,9 @@
 package application;
 
-import java.util.Date;
 import java.util.Locale;
 
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
-import model.entities.Department;
 import model.entities.Seller;
 
 public class Program {
@@ -17,6 +15,7 @@ public class Program {
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		Seller seller = sellerDao.findById(3);
 		
+		System.out.println("=== Test 1: findById ===");
 		System.out.println(seller);
 	}
 
